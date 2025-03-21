@@ -1188,7 +1188,7 @@ const _elm34tgrrq = `
                     <div class="row">
                         <div class="col-12">
                             <span style="font-size: 1.1em;">
-                                <strong>Selamat! Anda dinyatakan lulus seleksi SNBT SNPMB <thn>2025</thn></strong> di
+                                <strong>Selamat! Anda dinyatakan lulus seleksi SNBT SNPMB <thn>2025</thn></strong>
                             </span>
                         </div>
                     </div>
