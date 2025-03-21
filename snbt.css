@@ -1,0 +1,351 @@
+/* General Body Styling */
+body {
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5b86e5,
+    #36d1dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5b86e5,
+    #36d1dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  overflow: auto;
+  font-size: 1rem;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+  padding: 10px 20px; /* Padding atas-bawah dan kiri-kanan */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff; /* Warna teks */
+  text-decoration: none; /* Hilangkan underline */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Efek transisi saat hover */
+}
+.by {
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: #5b86e5; /* Warna teks saat hover */
+}
+
+/* Container Styling */
+.containers,
+#latch-screen {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Input Styling */
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.custom-input,
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-input:hover,
+input[type="number"]:hover,
+input[type="text"]:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  border-color: #60a5fa;
+}
+
+/* Button Styling */
+button,
+.nocss.black {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.nocss.black:hover {
+  background-color: #45a049;
+}
+
+button:not(.nocss) {
+  font-size: 13px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: rgb(204, 204, 204);
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+button:not(.nocss):hover {
+  background: linear-gradient(
+    90deg,
+    rgba(30, 144, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+button:not(.nocss):active {
+  transform: translate(0em, 0.2em);
+}
+
+.nocss.black {
+  background-color: #333;
+  color: white;
+}
+
+.nocss.black:hover {
+  background-color: #555;
+}
+
+/* Label Styling */
+.custom-label,
+.tahun-label {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.tahun-label {
+  margin-right: 10px;
+}
+
+/* QR Code and Output Area Styling */
+#latch-screen {
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .containers,
+  #latch-screen {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Center the Menu */
+#blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Box and Card Styling */
+.box {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: rgba(180, 180, 180, 0.5);
+  padding: 40px;
+  border: none;
+  overflow-y: auto;
+}
+
+.header-img {
+  max-height: 100px;
+}
+
+.void {
+  width: 100%;
+  height: 30px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.error {
+  color: #ff0000;
+}
+
+#countdown {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 40px;
+}
+
+#countdown > div {
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.btn-wrap-text {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+.box-width {
+  width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 576px) {
+  .box-width {
+    width: 75%;
+  }
+  .hd-text {
+    font-size: 12px;
+  }
+
+  .hd-text-1,
+  .hd-text-2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box-width {
+    width: 75%;
+  }
+  .hd-text {
+    font-size: 14px;
+  }
+
+  .hd-text-1,
+  .hd-text-2 {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box-width {
+    width: 50%;
+  }
+  .hd-text {
+    font-size: 14px;
+  }
+
+  .hd-text-1,
+  .hd-text-2 {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box-width {
+    width: 50%;
+  }
+  .hd-text {
+    font-size: 14px;
+  }
+
+  .hd-text-1,
+  .hd-text-2 {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+}
+
+/* Input Spinners */
+.no-spinners {
+  -moz-appearance: textfield;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Flash Button Animation */
+.flash-button {
+  color: #fff;
+  animation: flash 1s linear infinite;
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

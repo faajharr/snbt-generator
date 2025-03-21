@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Generator SNBT/UTBK 2025 Simulasi | Buat Hasil SNBT/UTBK Palsu dengan Realistis</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4079479040912824"
+     crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="6iGJm9FhpM5PaGmKB2ocmh_lD8G87wqhUcNdMAmRuqU" />
+    <meta name="description" content="Ingin tahu bagaimana rasanya melihat hasil SNBT/UTBK 2025? Dengan generator ini, Anda bisa membuat hasil SNBT/UTBK simulasi, baik lolos atau gagal, secara instan dan mudah! Template SNBT/UTBK 2025 ini dirancang untuk hiburan semata, cocok untuk berbagi candaan dengan teman atau sekadar memuaskan rasa penasaran. Yuk, coba sekarang dan buat hasil SNBT/UTBK versi Anda sendiri! 🎉" />
+    <meta name="keywords" content="fake snbt, fake utbk, generator snbt, generator utbk, template snbt, template utbk, fake lolos snbt, fake gagal snbt, fake lolos utbk, fake gagal utbk, snbt 2025, utbk 2025, hasil snbt palsu, hasil utbk palsu, buat snbt fake, buat utbk fake, generator snbt 2025, generator utbk 2025, template snbt 2025, template utbk 2025, faajharr" />
+    <link rel="stylesheet" href="snbp.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="snbt.css" />
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">SNBT/UTBK 2025 Generator</div>
+        <a class="by" href="https://github.com/faajharr" target="_blank">Created by Kojet</a>
+      </nav>
+    <span id="blocks">
+        <span class="abc">
+            <div>
+            Mode : <button id="toggleRedBlue" onclick="changeKabKot()" class="nocss">Lulus/ biru</button>
+          </div>
+            <br>
+            <div class="containers">
+              <label class="custom-label" for="inope">Nomor Peserta</label>
+              <input type="number" id="tahun" placeholder="2024/2025/2026" value="2025" onInput="updateThnText(this.value)">
+            </div>
+            <br>
+            <div class="containers">
+              <label class="custom-label" for="inope">Nomor Peserta</label>
+              <input class="custom-input" type="text" id="inope" placeholder="Nomor Peserta"/>
+            </div>
+            <button onclick="generateNumbers()">Randomize Nomor Peserta</button>
+            <div class="containers">
+              <label class="custom-label" for="iname">Namamu</label>
+              <input class="custom-input" type="text" id="iname" placeholder="Your Admirer"/>
+            </div>
+            <span id="redm">
+              <div class="containers">
+                <label class="custom-label" for="idate">Tanggal Lahir</label>
+                <input class="custom-input" type="date" id="idate" name="Tanggal Lahirmu">
+              </div>
+              <div class="containers">
+                <label class="custom-label" for="iunivcode">Kode Kampus - Nama Kampus</label>
+                <div class="inline-container">
+                <input class="custom-input" type="text" id="iunivcode" placeholder="3 digit" style="width:100px;" oninput="copyCode()"/> - 
+                <input class="custom-input" type="text" id="iuniv" placeholder="Nama Kampus" list="univs"/>
+              </div>
+              </div>
+              <div class="containers">
+                <label class="custom-label" for="iprodicode">Kode Prodi - Nama Prodi</label>
+                <div class="inline-container">
+                <input class="custom-input" type="text" id="iprodicode" placeholder="3 digit" style="width:75px; text-align: center;" /> - 
+                <input class="custom-input" type="text" id="iprodi" placeholder="Program Studi" list="jurusans" />
+              </div>
+              </div>
+              <button onclick="alertCode()">Kode kampus/ prodi</button>
+              <br>
+              <br>Pesan KIP Kuliah :
+              <button id="kip" onclick="toggleAct()" style="color: red">Aktif</button>
+              <datalist id="univs"></datalist>
+              <datalist id="jurusans"></datalist>
+            </span>
+            <br> Jika ukuran QRcode tidak sesuai, GENERATE ulang.
+          </span>
+          
+    </br>
+    </br>
+    <button class="nocss black" onclick="displayOutput(); generateQRCode();">GENERATE</button>
+    <button onclick="hideMenu()">Sembunyikan Menu</button>
+    </span>
+
+    <!-- Hasil Generate Muncul di Bawah -->
+    <div id="latch-screen">
+    </div>
+
+    <div class="footer">
+        &copy; 2025 SNBT Generator. All rights reserved.
+    </div>
+
+    <span id="index" style="justify-content: center;"></span>
+    <script src="qrgen2.js"></script> 
+    <script src="js_snbt.js"></script>
+</body>
+
+</html>
